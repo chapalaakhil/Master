@@ -8,7 +8,7 @@
                 System.debug(Scope);
                 if(opp.DeliveryInstallationStatus__c == null|| opp.DeliveryInstallationStatus__c == ''){
                 System.debug(opp.DeliveryInstallationStatus__c);
-                opp.DeliveryInstallationStatus__c ='In progress';
+                opp.DeliveryInstallationStatus__c =' progress';
             }
         }
     }
