@@ -1,0 +1,16 @@
+
+    //Set default value when a record is created (e.g., Opportunity Probability based on Stage)
+    public class Mixed_Methods30 {
+        public static void mainmethod(List<Opportunity> Scope)
+        {
+            for(Opportunity opp : Scope)
+            {
+                System.debug(Scope);
+                if(opp.DeliveryInstallationStatus__c == null|| opp.DeliveryInstallationStatus__c == ''){
+                System.debug(opp.DeliveryInstallationStatus__c);
+                opp.DeliveryInstallationStatus__c ='In progress';
+            }
+        }
+    }
+    }
+  
